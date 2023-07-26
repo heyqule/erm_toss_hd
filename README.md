@@ -1,5 +1,5 @@
 # ERM Protoss HD
-Add Protoss HD graphic.
+Add Protoss HD graphic to ERM_TOSS
 
 ##### Licenses
 Lua code files are licensed under GNU LGPLv3
