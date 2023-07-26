@@ -1,5 +1,5 @@
-# ERM Zerg HD
-Add Zerg HD graphic.
+# ERM Protoss HD
+Add Protoss HD graphic.
 
 ##### Licenses
 Lua code files are licensed under GNU LGPLv3
