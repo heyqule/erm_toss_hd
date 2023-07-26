@@ -1,0 +1,7 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2023-07-??
+
+  Features:
+    - Added support for SC Remaster Graphics
+    - Special Thanks to Shinzou for preparing the Remaster Graphics
