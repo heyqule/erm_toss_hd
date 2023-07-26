@@ -21,14 +21,17 @@ local templar_death = data.raw['explosion']['protoss-templar-death']
 templar_death['animations'] = AnimationDB.get_layered_animations('death','templar','explosion')
 
 local large_building = data.raw['explosion']['toss-large-building-explosion']
-log(serpent.block(large_building))
 large_building['animations'] = AnimationDB.get_layered_animations('death','large_building','explosion')
-log(serpent.block(large_building))
-
 
 local small_building = data.raw['explosion']['toss-small-building-explosion']
 small_building['animations'] = AnimationDB.get_layered_animations('death','small_building','explosion')
 
 local darkarchon_death = data.raw['explosion']['toss-red-small-building-explosion']
 darkarchon_death['animations'] = AnimationDB.get_layered_animations('death','darkarchon','explosion')
+
+local small_rubble = data.raw['corpse']['toss-small-base-corpse']
+small_rubble['animation'] = AnimationDB.get_single_animation('death','small_rubble','explosion')
+
+local large_rubble = data.raw['corpse']['toss-large-base-corpse']
+large_rubble['animation'] = AnimationDB.get_single_animation('death','large_rubble','explosion')
 
