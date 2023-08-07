@@ -39,3 +39,5 @@ require "prototypes.building.cybernetics_core"
 require "prototypes.building.cannon"
 require "prototypes.building.citadel_adun"
 require "prototypes.building.arbiter_tribunal"
+
+require "update-teamcolour"

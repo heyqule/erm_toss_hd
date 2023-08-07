@@ -8,30 +8,30 @@ require('__erm_toss__/global')
 local ErmConfig = require('__enemyracemanager__/lib/global_config')
 local AnimationDB = require('__erm_toss_hd_assets__/animation_db')
 
-local small_air_death = data.raw['explosion']['protoss-small-air-death']
+local small_air_death = data.raw['explosion'][MOD_NAME..'/small-air-death']
 small_air_death['animations'] = AnimationDB.get_layered_animations('death','small_air','explosion')
 
-local large_air_death = data.raw['explosion']['protoss-large-air-death']
+local large_air_death = data.raw['explosion'][MOD_NAME..'/large-air-death']
 large_air_death['animations'] = AnimationDB.get_layered_animations('death','large_air','explosion')
 
-local zealot_death = data.raw['explosion']['protoss-zealot-death']
+local zealot_death = data.raw['explosion'][MOD_NAME..'/zealot-death']
 zealot_death['animations'] = AnimationDB.get_layered_animations('death','zealot','explosion')
 
-local templar_death = data.raw['explosion']['protoss-templar-death']
+local templar_death = data.raw['explosion'][MOD_NAME..'/templar-death']
 templar_death['animations'] = AnimationDB.get_layered_animations('death','templar','explosion')
 
-local large_building = data.raw['explosion']['toss-large-building-explosion']
+local large_building = data.raw['explosion'][MOD_NAME..'/large-building-explosion']
 large_building['animations'] = AnimationDB.get_layered_animations('death','large_building','explosion')
 
-local small_building = data.raw['explosion']['toss-small-building-explosion']
+local small_building = data.raw['explosion'][MOD_NAME..'/small-building-explosion']
 small_building['animations'] = AnimationDB.get_layered_animations('death','small_building','explosion')
 
-local darkarchon_death = data.raw['explosion']['toss-red-small-building-explosion']
+local darkarchon_death = data.raw['explosion'][MOD_NAME..'/red-small-building-explosion']
 darkarchon_death['animations'] = AnimationDB.get_layered_animations('death','darkarchon','explosion')
 
-local small_rubble = data.raw['corpse']['toss-small-base-corpse']
+local small_rubble = data.raw['corpse'][MOD_NAME..'/small-base-corpse']
 small_rubble['animation'] = AnimationDB.get_single_animation('death','small_rubble','explosion')
 
-local large_rubble = data.raw['corpse']['toss-large-base-corpse']
+local large_rubble = data.raw['corpse'][MOD_NAME..'/large-base-corpse']
 large_rubble['animation'] = AnimationDB.get_single_animation('death','large_rubble','explosion')
 

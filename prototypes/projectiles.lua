@@ -8,54 +8,54 @@ require('__erm_toss__/global')
 local ErmConfig = require('__enemyracemanager__/lib/global_config')
 local AnimationDB = require('__erm_toss_hd_assets__/animation_db')
 
-local scout_rocket = data.raw['projectile']['scout-rocket']
+local scout_rocket = data.raw['projectile'][MOD_NAME..'/scout-rocket']
 scout_rocket['animation'] = AnimationDB.get_layered_animations('projectiles','scout_rocket','projectile')
 
-local dragoon = data.raw['projectile']['dragoon-projectile']
+local dragoon = data.raw['projectile'][MOD_NAME..'/dragoon-projectile']
 dragoon['animation'] = AnimationDB.get_layered_animations('projectiles','dragoon','projectile')
 
-local interceptor_laser = data.raw['projectile']['interceptor-laser']
+local interceptor_laser = data.raw['projectile'][MOD_NAME..'/interceptor-laser']
 interceptor_laser['animation'] = AnimationDB.get_layered_animations('projectiles','interceptor_laser','projectile')
 
 
-local stasis = data.raw['projectile']['stasis-projectile']
+local stasis = data.raw['projectile'][MOD_NAME..'/stasis-projectile']
 stasis['animation'] = AnimationDB.get_layered_animations('projectiles','stasis','projectile')
 
-local exp_dragoon = data.raw['explosion']['dragoon-explosion']
+local exp_dragoon = data.raw['explosion'][MOD_NAME..'/dragoon-explosion']
 exp_dragoon['animations'] = AnimationDB.get_layered_animations('projectiles','dragoon','explosion')
 
-local exp_corsair = data.raw['explosion']['corsair-explosion']
+local exp_corsair = data.raw['explosion'][MOD_NAME..'/corsair-explosion']
 exp_corsair['animations'] = AnimationDB.get_layered_animations('projectiles','corsair','explosion')
 
-local exp_stasis = data.raw['explosion']['stasis-explosion']
+local exp_stasis = data.raw['explosion'][MOD_NAME..'/stasis-explosion']
 exp_stasis['animations'] = AnimationDB.get_layered_animations('projectiles','stasis','explosion')
 
-local exp_psystorm = data.raw['explosion']['psystorm-explosion']
+local exp_psystorm = data.raw['explosion'][MOD_NAME..'/psystorm-explosion']
 exp_psystorm['animations'] = AnimationDB.get_layered_animations('projectiles','psystorm','explosion')
 
-local exp_archon_hit = data.raw['explosion']['archon-hit-explosion']
+local exp_archon_hit = data.raw['explosion'][MOD_NAME..'/archon-hit-explosion']
 exp_archon_hit['animations'] = AnimationDB.get_layered_animations('projectiles','archon_hit','explosion')
 
-local exp_recall_80 = data.raw['explosion']['protoss-recall-80']
+local exp_recall_80 = data.raw['explosion'][MOD_NAME..'/recall-80']
 exp_recall_80['animations'] = AnimationDB.get_layered_animations('projectiles','recall_80','explosion')
 
-local exp_recall = data.raw['explosion']['protoss-recall']
+local exp_recall = data.raw['explosion'][MOD_NAME..'/recall']
 exp_recall['animations'] = AnimationDB.get_layered_animations('projectiles','recall','explosion')
 
-local disrupt_80 = data.raw['explosion']['protoss-disrupt-80']
+local disrupt_80 = data.raw['explosion'][MOD_NAME..'/disrupt-80']
 disrupt_80['animations'] = AnimationDB.get_layered_animations('projectiles','disrupt_80','explosion')
 
-local disrupt = data.raw['explosion']['protoss-disrupt']
+local disrupt = data.raw['explosion'][MOD_NAME..'/disrupt']
 disrupt['animations'] = AnimationDB.get_layered_animations('projectiles','disrupt','explosion')
 
-local feedback = data.raw['explosion']['darkarchon-feedback']
+local feedback = data.raw['explosion'][MOD_NAME..'/darkarchon-feedback']
 feedback['animations'] = AnimationDB.get_layered_animations('projectiles','darkarchon_feedback','explosion')
 
-local scarab = data.raw['explosion']['scarab-explosion']
+local scarab = data.raw['explosion'][MOD_NAME..'/scarab-explosion']
 scarab['animations'] = AnimationDB.get_layered_animations('projectiles','scarab','explosion')
 
-local maelstrom = data.raw['sticker']['darkarchon-maelstrom']
+local maelstrom = data.raw['sticker'][MOD_NAME..'/darkarchon-maelstrom']
 maelstrom['animation'] = AnimationDB.get_layered_animations('projectiles','darkarchon_maelstrom','explosion')
 
-local battery = data.raw['explosion']['shield-battery-explosion']
+local battery = data.raw['explosion'][MOD_NAME..'/shield-battery-explosion']
 battery['animations'] = AnimationDB.get_layered_animations('projectiles','shield_battery','explosion')
