@@ -3,6 +3,7 @@
 --- Created by heyqule.
 --- DateTime: 7/21/2023 6:06 PM
 ---
+MOD_NAME = 'erm_toss'
 
 require "prototypes.boss-projectiles"
 require "prototypes.projectiles"
