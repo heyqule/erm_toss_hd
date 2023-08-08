@@ -29,7 +29,7 @@ local convert_to_hd = function(i)
     unit['animations'] = AnimationDB.get_layered_animations('buildings', name, 'run')
 
     unit['integration_patch'] = AnimationDB.get_single_animation('buildings', name, 'integration_patch')
-    unit['integration_patch_render_layer'] = 'decals'
+    unit['integration_patch_render_layer'] = 'ground-patch'
 
     unit['collision_box'] = collision_box
     unit['selection_box'] = selection_box
