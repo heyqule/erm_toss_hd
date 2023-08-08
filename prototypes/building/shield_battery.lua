@@ -9,6 +9,7 @@ require('__erm_toss__/global')
 require('util')
 local ErmConfig = require('__enemyracemanager__/lib/global_config')
 local AnimationDB = require('__erm_toss_hd_assets__/animation_db')
+local SharedFunction = require('prototypes.shared_functions')
 
 --- Change name
 local name = 'shield_battery'
@@ -44,7 +45,7 @@ local convert_to_hd = function(i)
     turret['sticker_box'] = selection_box
     turret['map_generator_bounding_box'] = map_generator_bounding_box
 
-    turret['dying_explosion'] = 'toss-small-building-explosion'
+    turret['dying_explosion'] = MOD_NAME..'/small-building-explosion'
 end
 
 --- Convert regular building, level 1 - 20

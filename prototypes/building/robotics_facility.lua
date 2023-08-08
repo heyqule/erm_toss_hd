@@ -9,6 +9,7 @@ require('__erm_toss__/global')
 require('util')
 local ErmConfig = require('__enemyracemanager__/lib/global_config')
 local AnimationDB = require('__erm_toss_hd_assets__/animation_db')
+local SharedFunction = require('prototypes.shared_functions')
 
 --- Change name
 local name = 'robotics_facility'
@@ -31,6 +32,9 @@ local convert_to_hd = function(i)
     unit['selection_box'] = selection_box
     unit['sticker_box'] = selection_box
     unit['map_generator_bounding_box'] = map_generator_bounding_box
+
+    unit['spawn_decorations_on_expansion'] = true
+    unit['spawn_decoration'] = SharedFunction.getSpawnerCreep()
 end
 
 --- Convert regular building, level 1 - 20

@@ -39,7 +39,7 @@ end
 --- This fixes the corpse texture to HD one
 local convert_corpse = function()
     --- Get the data block
-    local corpse = data.raw["corpse"][name .. '-corpse']
+    local corpse = data.raw["corpse"][MOD_NAME .. '/' .. name .. '-corpse']
 
     --- Replace the animation
     corpse['animation'] = AnimationDB.get_single_animation('units', name, 'corpse')
