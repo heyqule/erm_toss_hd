@@ -33,6 +33,7 @@ local convert_to_hd = function(i)
     unit['selection_box'] = selection_box
     unit['sticker_box'] = selection_box
 
+    unit['dying_explosion'] = MOD_NAME..'/extra-large-air-death'
 
 end
 

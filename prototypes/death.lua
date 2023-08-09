@@ -5,7 +5,6 @@
 ---
 
 require('__erm_toss__/global')
-local ErmConfig = require('__enemyracemanager__/lib/global_config')
 local AnimationDB = require('__erm_toss_hd_assets__/animation_db')
 
 local small_air_death = data.raw['explosion'][MOD_NAME..'/small-air-death']
@@ -35,3 +34,11 @@ small_rubble['animation'] = AnimationDB.get_single_animation('death','small_rubb
 local large_rubble = data.raw['corpse'][MOD_NAME..'/large-base-corpse']
 large_rubble['animation'] = AnimationDB.get_single_animation('death','large_rubble','explosion')
 
+data:extend {
+    {
+        type = "explosion",
+        name = MOD_NAME..'/extra-large-air-death',
+        flags = { "not-on-map" },
+        animations = AnimationDB.get_layered_animations('death','extra_large_air','explosion')
+    },
+}
