@@ -33,6 +33,7 @@ local convert_to_hd = function(i)
     unit['selection_box'] = selection_box
     unit['sticker_box'] = selection_box
 
+    unit['distance_per_frame'] = 0.16
 
 end
 

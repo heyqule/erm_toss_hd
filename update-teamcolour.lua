@@ -6,9 +6,7 @@
 
 local ERM_UnitHelper = require('__enemyracemanager__/lib/rig/unit_helper')
 local TeamColorManager = require('__erm_libs__/prototypes/teamcolor_manager')
-require('__erm_zerg__/global')
-
-local entity_types = {'unit','unit-spawner', 'turret', 'explosion', 'corpse'}
+require('__erm_toss__/global')
 
 local color = ERM_UnitHelper.format_team_color(
         settings.startup['erm_toss-team_color'].value,
