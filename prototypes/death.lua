@@ -11,7 +11,7 @@ local small_air_death = data.raw['explosion'][MOD_NAME..'/small-air-death']
 small_air_death['animations'] = AnimationDB.get_layered_animations('death','small_air','explosion')
 
 local large_air_death = data.raw['explosion'][MOD_NAME..'/large-air-death']
-large_air_death['animations'] = AnimationDB.get_layered_animations('death','large_air','explosion')
+large_air_death['animations'] = AnimationDB.get_layered_animations('death','small_building','explosion')
 
 local zealot_death = data.raw['explosion'][MOD_NAME..'/zealot-death']
 zealot_death['animations'] = AnimationDB.get_layered_animations('death','zealot','explosion')
@@ -33,12 +33,3 @@ small_rubble['animation'] = AnimationDB.get_single_animation('death','small_rubb
 
 local large_rubble = data.raw['corpse'][MOD_NAME..'/large-base-corpse']
 large_rubble['animation'] = AnimationDB.get_single_animation('death','large_rubble','explosion')
-
-data:extend {
-    {
-        type = "explosion",
-        name = MOD_NAME..'/extra-large-air-death',
-        flags = { "not-on-map" },
-        animations = AnimationDB.get_layered_animations('death','extra_large_air','explosion')
-    },
-}

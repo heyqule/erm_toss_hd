@@ -3,9 +3,10 @@
 --- Created by heyqule.
 --- DateTime: 8/7/2022 7:42 PM
 ---
-local AnimationDB = require('__erm_toss_hd_assets__/animation_db')
+
 local ERM_UnitHelper = require('__enemyracemanager__/lib/rig/unit_helper')
-local String = require('__stdlib__/stdlib/utils/string')
+local TeamColorManager = require('__erm_libs__/prototypes/teamcolor_manager')
+require('__erm_zerg__/global')
 
 local entity_types = {'unit','unit-spawner', 'turret', 'explosion', 'corpse'}
 
@@ -34,32 +35,4 @@ else
     color.b = color.b * strength_multipler
 end
 
-local name_check = function(name)
-    local nameToken = String.split(name, '/')
-    return nameToken[1] == 'erm_toss'
-end
-
-for _, entity_type in pairs(entity_types) do
-    for _, entity in pairs(data.raw[entity_type]) do
-        if name_check(entity.name) == true then
-            if entity['animation'] then
-                entity['animations'] = AnimationDB.alter_team_color(entity['animation'], color, disable_mask, preserve_gloss)
-            end
-            if entity['animations'] then
-                entity['animations'] = AnimationDB.alter_team_color(entity['animations'], color, disable_mask, preserve_gloss)
-            end
-            if entity['run_animation'] then
-                entity['run_animation'] = AnimationDB.alter_team_color(entity['run_animation'], color, disable_mask, preserve_gloss)
-            end
-            if entity['attack_parameters'] and entity['attack_parameters']['animation'] then
-                entity['attack_parameters']['animation'] = AnimationDB.alter_team_color(entity['attack_parameters']['animation'], color, disable_mask, preserve_gloss)
-            end
-            if entity['folded_animation'] then
-                entity['folded_animation'] =  AnimationDB.alter_team_color(entity['folded_animation'], color, disable_mask, preserve_gloss)
-            end
-            if entity['starting_attack_animation'] then
-                entity['starting_attack_animation'] =  AnimationDB.alter_team_color(entity['starting_attack_animation'], color, disable_mask, preserve_gloss)
-            end
-        end
-    end
-end
+TeamColorManager.change_team_color(MOD_NAME, color, disable_mask, preserve_gloss)

@@ -21,7 +21,7 @@ local map_generator_bounding_box = { { -3, -3 }, { 3, 3 } }
 local selection_box = { { -2, -2 }, { 2, 2 } }
 
 local folded_animation = function()
-    local animation = AnimationDB.get_layered_animations('buildings', name, 'run')
+    local animation = AnimationDB.get_layered_animations('buildings', name, 'folded')
     return animation
 end
 
